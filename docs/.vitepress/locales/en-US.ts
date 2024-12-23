@@ -54,11 +54,23 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
       },
       {
         text: 'Report',
-        link: '/report'
+        collapsed: false,
+        items: [
+          {
+            text: 'Report Management',
+            link: '/report/'
+          },
+        ]
       },
       {
-        text: 'Membership',
-        link: '/membership'
+        text: 'Membership Card',
+        collapsed: false,
+        items: [
+          {
+            text: 'Membership Management',
+            link: '/membership/'
+          },
+        ]
       },
       {
         text: 'Wechat Mall',
