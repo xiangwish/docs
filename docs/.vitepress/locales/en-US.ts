@@ -87,8 +87,22 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
         ]
       },
       {
-        text: 'Agent',
-        link: '/agent'
+        text: 'Revenue Sharing',
+        collapsed: false,
+        items: [
+          {
+            text: 'Rule',
+            link: '/agent/rule'
+          },
+          {
+            text: 'Account',
+            link: '/agent/account'
+          },
+          {
+            text: 'Device',
+            link: '/agent/device'
+          }
+        ]
       },
       {
         text: 'Account',
