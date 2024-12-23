@@ -12,7 +12,13 @@ hero:
       link: https://gzscenthope.en.alibaba.com/
     - theme: alt
       text: Platform Usage
-      link: /guide
+      link: /en-US/guide
+  image:
+    src: /images/machine.png
+    alt: awish vending machine
+    style: {
+      width: '100%',
+    }
 
 features:
   - title: Customizable
