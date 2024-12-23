@@ -105,8 +105,22 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
         ]
       },
       {
-        text: 'Account',
-        link: '/account'
+        text: 'Employee Management',
+        collapsed: false,
+        items: [
+          {
+            text: 'Staff list',
+            link: '/employee/'
+          },
+          {
+            text: 'Role',
+            link: '/employee/role'
+          },
+          {
+            text: 'Log',
+            link: '/employee/log'
+          }
+        ]
       }
     ]
   },
