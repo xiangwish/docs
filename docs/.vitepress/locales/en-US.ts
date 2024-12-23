@@ -62,7 +62,29 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
       },
       {
         text: 'Wechat Mall',
-        link: '/wechat-mall'
+        collapsed: false,
+        items: [
+          {
+            text: 'Order Center',
+            link: '/wechat-mall/'
+          },
+          {
+            text: 'B2C Mall configuration',
+            link: '/wechat-mall/'
+          },
+          {
+            text: 'Good configuration',
+            link: '/wechat-mall/'
+          },
+          {
+            text: 'Member configuration',
+            link: '/wechat-mall/'
+          },
+          {
+            text: 'B2C Mall Advertise',
+            link: '/wechat-mall/'
+          },
+        ]
       },
       {
         text: 'Merchant',
