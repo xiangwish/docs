@@ -14,9 +14,7 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
   {
     text: 'Guide',
     collapsed: false,
-    items: [
-      { text: 'Guide', link: 'guide' }
-    ]
+    items: [{ text: 'Guide', link: 'guide' }]
   },
   {
     text: 'Platform Usage',
@@ -68,7 +66,25 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
       },
       {
         text: 'Merchant',
-        link: '/merchant'
+        collapsed: false,
+        items: [
+          {
+            text: 'Logo Setting',
+            link: '/merchant/logo'
+          },
+          {
+            text: 'Information Setting',
+            link: '/merchant/information'
+          },
+          {
+            text: 'Payment Method',
+            link: '/merchant/payments'
+          },
+          {
+            text: 'SMS Record',
+            link: '/merchant/sms-record'
+          }
+        ]
       },
       {
         text: 'Agent',
@@ -100,12 +116,17 @@ export const enUS = defineConfig({
   lang: 'en-US',
   description:
     'Guangzhou Xiangwish Intelligent Technology Co., Ltd., creating intelligent business terminals exclusively for you.',
-  head: [['link', {
-    rel: 'icon',
-    type: 'image/png',
-    sizes: '32x32',
-    href: '../../images/logo.jpg'
-  }]],
+  head: [
+    [
+      'link',
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: '../../images/logo.jpg'
+      }
+    ]
+  ],
   themeConfig: {
     nav: Nav,
     sidebar: {
