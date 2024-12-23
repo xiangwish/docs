@@ -30,19 +30,43 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
       },
       {
         text: 'Products',
-        link: '/products'
+        collapsed: false,
+        items: [
+          {
+            text: 'Products Management',
+            link: '/products/'
+          }
+        ]
       },
       {
         text: 'Device',
-        link: '/device'
+        collapsed: false,
+        items: [
+          {
+            text: 'Device Management',
+            link: '/device/'
+          }
+        ]
       },
       {
         text: 'Advertise',
-        link: '/advertise'
+        collapsed: false,
+        items: [
+          {
+            text: 'Advertise Management',
+            link: '/advertise/'
+          }
+        ]
       },
       {
         text: 'Sales',
-        link: '/sales'
+        collapsed: false,
+        items: [
+          {
+            text: 'Sales Management',
+            link: '/sales/'
+          }
+        ]
       },
       {
         text: 'Discount',
