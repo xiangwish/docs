@@ -45,12 +45,24 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
         link: '/sales'
       },
       {
-        text: 'Marketing',
-        link: '/marketing'
+        text: 'Discount',
+        collapsed: false,
+        items: [
+          {
+            text: 'Discount Management',
+            link: '/discount/'
+          }
+        ]
       },
       {
         text: 'Replenishment',
-        link: '/replenishment'
+        collapsed: false,
+        items: [
+          {
+            text: 'Report Management',
+            link: '/replenishment/'
+          }
+        ]
       },
       {
         text: 'Report',
@@ -59,7 +71,7 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
           {
             text: 'Report Management',
             link: '/report/'
-          },
+          }
         ]
       },
       {
@@ -69,7 +81,7 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
           {
             text: 'Membership Management',
             link: '/membership/'
-          },
+          }
         ]
       },
       {
@@ -95,7 +107,7 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
           {
             text: 'B2C Mall Advertise',
             link: '/wechat-mall/'
-          },
+          }
         ]
       },
       {
