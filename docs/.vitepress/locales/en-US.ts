@@ -18,7 +18,7 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
   },
   {
     text: 'Platform Usage',
-    collapsed: false,
+    collapsed: true,
     items: [
       {
         text: 'User Login',
@@ -197,6 +197,84 @@ const SidebarGuide: DefaultTheme.SidebarItem[] = [
   {
     text: 'Secondary development',
     link: '/development'
+  },
+  {
+    text: 'RESTful API',
+    link: '/RESTful',
+    collapsed: false,
+    items: [
+      {
+        text: 'Orders',
+        items: [
+          {
+            text: 'Order & Delivery',
+            link: '/RESTful/createOrder'
+          },
+          {
+            text: 'Rent Back',
+            link: '/RESTful/rentBack'
+          },
+          {
+            text: 'Delivery Results',
+            link: '/RESTful/getOrderStatus'
+          },
+          {
+            text: 'Delivery Command',
+            link: '/RESTful/specifiedCodeDelivery'
+          }
+        ]
+      },
+      {
+        text: 'Machines',
+        items: [
+          {
+            text: 'All Machines',
+            link: '/RESTful/machines'
+          },
+          {
+            text: 'Machine All Floors',
+            link: '/RESTful/getAllFloors'
+          },
+          {
+            text: 'Machine Floors',
+            link: '/RESTful/getFloors'
+          },
+          {
+            text: 'Generate PickupCode',
+            link: '/RESTful/createPickupCode'
+          },
+          {
+            text: 'PickupCode Status',
+            link: '/RESTful/getPickupCode'
+          },
+          {
+            text: 'List Goods',
+            link: '/RESTful/getGoodsList'
+          },
+          {
+            text: 'Get Goods',
+            link: '/RESTful/getGoods'
+          },
+          {
+            text: 'Order Deliver',
+            link: '/RESTful/updateOrderDeliver'
+          }
+        ]
+      },
+      {
+        text: 'Cell Vending Machine',
+        items: [
+          {
+            text: 'Qrcode',
+            link: '/RESTful/qrcode'
+          },
+          {
+            text: 'Update Stock',
+            link: '/RESTful/updateStock'
+          }
+        ]
+      }
+    ]
   },
   {
     text: 'Contact US',
